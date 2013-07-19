@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>Global_Menu</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Global_Menu</td></tr>
+</thead><tbody>
+<!--Check ada ads -->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='left_content']/p/span</td>
+	<td>Betalt plassering fra ada.no</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='left_content']/p/span/a</td>
+	<td>ada.no</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='left_content']/div[@id='adaAdsDiv']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='left_content']/div[@id='adaAdsDiv']/iframe</td>
+	<td>#no_mech</td>
+</tr>
+<!--tips oss -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='right_content']/div[@class='box box-tips-oss']/a[@id='tips-oss']</td>
+	<td></td>
+</tr>
+<!--Check breadcrumbs-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[@class='breadcrumbs']</td>
+	<td></td>
+</tr>
+<!--Check description for each categories-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='category_description']</td>
+	<td></td>
+</tr>
+<!--Check categoty description at the bottom -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='category_description']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

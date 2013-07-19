@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>Reise</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Reise</td></tr>
+</thead><tbody>
+<!--Test search in Reise category -->
+<tr>
+	<td>open</td>
+	<td>/reise</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Reise - Startsiden.no</td>
+	<td></td>
+</tr>
+<!--Check ads-->
+<tr>
+	<td>assertElementPositionTop</td>
+	<td>//div[@id='top_ads']/div</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='right_content']/div/div[@id='ads_left']/div</td>
+	<td>right ads----&gt;dont show on the page now </td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='right_content']/div/div[@id='ads_left1']/div</td>
+	<td>second right ads------&gt;doesnt show on the page now </td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='all_wrapper']/div[2]/div</td>
+	<td>outer right ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='wrapper']/div[4]/div</td>
+	<td>Check bottom ads </td>
+</tr>
+<!--Check main Contents-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']/div[@id='startsiden_katalogsearch']/div/form[@id='instantsearchform']</td>
+	<td>There s a search box</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='result']/ol/li[3]/div[@id='middleads']/</td>
+	<td>Check middle ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']//div[@id='result']/ol[@id='search_result_cate']</td>
+	<td>main content s showing </td>
+</tr>
+<!--Check content on the left-->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='left_content']/div[@class='box nav-box']/div/div[@class='box-title']/h4[@id='left_top_topic']</td>
+	<td>Reise</td>
+</tr>
+<tr>
+	<td>assertXpathCount</td>
+	<td>//div[@class='box-content']/ul[@id='sub_category']/li</td>
+	<td>20</td>
+</tr>
+<!--Test Search-->
+<tr>
+	<td>type</td>
+	<td>id=instant_search</td>
+	<td>hus</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=instant_search</td>
+	<td>65</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='breadcrumbs_panel']/div/div/ul/li[1]/a</td>
+	<td>Startsiden</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='breadcrumbs_panel']/div/div/ul/li[2]/a</td>
+	<td>Nettguide</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='breadcrumbs_panel']/div/div/ul/li[3]</td>
+	<td>Søk: hus</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='box-content']/ul[@id='sub_category2']/li</td>
+	<td>change to use sub_category2 after search </td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>kropp_og_kosthold</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">kropp_og_kosthold</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/helse/kropp_og_kosthold/</td>
+	<td></td>
+</tr>
+<!--Check Ads-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='top_ads']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='right_content']/div/div[@id='ads_left']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='right_content']/div/div[@id='ads_left1']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='ads_outer_right']/div</td>
+	<td>check outer right ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=ads_bottom</td>
+	<td></td>
+</tr>
+<!--Check left content -->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='left_content']/div[@class='box nav-box']/div/div[@class='box-title']</td>
+	<td>Kropp og kosthold</td>
+</tr>
+<tr>
+	<td>assertXpathCount</td>
+	<td>//div[@id='left_content']/div[@class='box nav-box']/div/div[@class='box-content']/ul[@id='sub_category']/li</td>
+	<td>6</td>
+</tr>
+<!--Check Middle Content -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']/div[@id='startsiden_katalogsearch']/div/form[@id='instantsearchform']</td>
+	<td>Search box is showing</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']//div[@id='result']/div[@class='news_block panel-outer']/div</td>
+	<td>Check for job in main content</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//*[@id=&quot;search_result_cate&quot;]</td>
+	<td>Check for the result</td>
+</tr>
+<!--Check job on the right-->
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='right_content']/div[@class='box top-bar job-newsfeed-box']//div[@class='box-title']</td>
+	<td>Helsenyheter</td>
+</tr>
+</tbody></table>
+</body>
+</html>

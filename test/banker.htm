@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>banker</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">banker</td></tr>
+</thead><tbody>
+<!--/nettguide/okonomi_og_naringsliv/bank_og_forsikring/banker/-->
+<tr>
+	<td>open</td>
+	<td>/okonomi_og_naringsliv/bank_og_forsikring/banker/</td>
+	<td></td>
+</tr>
+<!--Check Ads-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='top_ads']</td>
+	<td>Check the first top ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='top_ads']</td>
+	<td>Check the second top ads-----&gt; dont show now because havent sold </td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='ads_outer_right']</td>
+	<td>Check Outter ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='ads_bottom']</td>
+	<td>Check bottom ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='ads_middle']</td>
+	<td>Check for the middle ads--&gt; Dont have the Middle ads for now</td>
+</tr>
+<!--Check main content-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//input[@id='non_instant_search']</td>
+	<td>Search box is showing</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='ads_middle']</td>
+	<td>Check the ads under search box</td>
+</tr>
+</tbody></table>
+</body>
+</html>

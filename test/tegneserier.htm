@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>tegneserier_pa_nett</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">tegneserier_pa_nett</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/underholdning/tegneserier/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>3000</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/Users/jew/Desktop/seleniumPrototype/capture/Tegneserier.jpg</td>
+	<td></td>
+</tr>
+<!--Check ads-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=top_ads</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='all_wrapper']/div[2]/div</td>
+	<td>outer right ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='wrapper']/div[4]/div</td>
+	<td>check bottom ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=ads_wallpaper_ad</td>
+	<td>check wallpaper ads for this category </td>
+</tr>
+<!--Check three columns -->
+<tr>
+	<td>verifyXpathCount</td>
+	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row1']</td>
+	<td>check fot the first column</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row2']</td>
+	<td>check fot the&nbsp;&nbsp;second column</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row3']</td>
+	<td>check fot the third column</td>
+</tr>
+</tbody></table>
+</body>
+</html>

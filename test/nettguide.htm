@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>/nettguide</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+</thead><tbody>
+<!--Nettguide-->
+<tr>
+	<td>open</td>
+	<td>/nettguide</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>3000</td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Nettguide - Startsiden.no</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//body[@id='category_598833']//div[@id='atoz_wrapper']//h2</td>
+	<td>A - Å Nettguiden Temaer</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='atoz_search_box']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//ul[@class='atoz-col']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/Users/jew/Desktop/seleniumPrototype/capture/Nettguide.jpg</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

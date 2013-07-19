@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide/" />
+<title>pilot</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">pilot</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/mat_og_drikke</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>/Users/jew/Desktop/seleniumPrototype/capture/Mat.jpg</td>
+	<td></td>
+</tr>
+<!--Check Blog section-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_blog']</td>
+	<td>Check blog section</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id='toggle_bar_blog']</td>
+	<td>Check toggle bar for blog section</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.collapsed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_blog']/span</td>
+	<td></td>
+</tr>
+<!--Check Links section-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_links']</td>
+	<td>Check links section</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id='toggle_bar_links']</td>
+	<td>Check toggle bar for blog link</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_links']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_links']/span</td>
+	<td></td>
+</tr>
+<!--Check Video section-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_hvordan']</td>
+	<td>Check video section</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id='toggle_bar_hvordan']</td>
+	<td>Check toggle bar for vdo section</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_hvordan']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_hvordan']/span</td>
+	<td></td>
+</tr>
+<!--Check NEWS section-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_news']</td>
+	<td>Check News section</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//a[@id='toggle_bar_news']</td>
+	<td>Check toggle bar for news section</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#toggle_bar_news&gt; span.collapsed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='toggle_bar_blog']/span</td>
+	<td></td>
+</tr>
+<!--Check TV-Guide-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_tvguide']</td>
+	<td>Check Tv-Guide</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_tvguide']/div[@id='tvguide']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_social']</td>
+	<td>Check social section( FB comment )</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@class='google_ads bottom']</td>
+	<td>Check Google ads at the bottom</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='category_description']</td>
+	<td>Check category description</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='global_menu']</td>
+	<td>Check Global menu</td>
+</tr>
+<!--Test Search in Mat og Drikke-->
+<tr>
+	<td>store</td>
+	<td>fisk</td>
+	<td>searchWord</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='non_instant_search']</td>
+	<td>${searchWord}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.button.button-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertHtmlSource</td>
+	<td>regex:${searchWord}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='main_content_right']/div[@id='section_wrapper_hvordan']</td>
+	<td>Videos show on the right after searching # no_mech</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='main_content_left']/div[@class='google_ads top']</td>
+	<td>Check top ads # no_mech</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='main_content_left']/div[@class='google_ads bottom']</td>
+	<td>Check bottom ads # no_mech</td>
+</tr>
+</tbody></table>
+</body>
+</html>

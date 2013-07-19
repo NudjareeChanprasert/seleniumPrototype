@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>E-post</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">E-post</td></tr>
+</thead><tbody>
+<!--/nettguide/it_og_mobil/e-post/-->
+<tr>
+	<td>open</td>
+	<td>/nettguide/it_og_mobil/e-post/</td>
+	<td></td>
+</tr>
+<!--Check Ads-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='top_ads']/div</td>
+	<td>Check the first top ads</td>
+</tr>
+<!--Check main content-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']/div[@id='startsiden_katalogsearch']/div/form[@id='instantsearchform']</td>
+	<td>Search box is showing</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content']/div[@id='result']//div[@id='mailtoweb_login']</td>
+	<td>Check form login</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='mailtoweb_login']//input[@name='emailaddress']</td>
+	<td>check address box</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='mailtoweb_login']//input[@name='password']</td>
+	<td>check password box</td>
+</tr>
+</tbody></table>
+</body>
+</html>

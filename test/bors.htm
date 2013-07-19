@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://kua.startsiden.no/nettguide" />
+<title>Børs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Børs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/okonomi_og_naringsliv/bors/</td>
+	<td></td>
+</tr>
+<!--Check Ads-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=top_ads</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=top_ads</td>
+	<td>Check top ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='all_wrapper']/div[@id='ads_outer_right']</td>
+	<td>Check outer right ads</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='wrapper']/div[@id='ads_bottom']</td>
+	<td>Check Bottom</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='middleads']</td>
+	<td>Check for middle ads</td>
+</tr>
+<!--Test Search, test breadcrumbs ,after search must hide the middle ads and job ont the right-->
+<tr>
+	<td>type</td>
+	<td>id=non_instant_search</td>
+	<td>hus</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.button.button-submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

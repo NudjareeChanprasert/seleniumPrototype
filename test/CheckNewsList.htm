@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://kua-batmin.startsiden.no/login" />
+<title>CheckNewsList</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CheckNewsList</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>css=#cat_id_137 &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>999</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='newslist_config']/div[@class='accordion-group']/div[@class='accordion-heading']/button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>999</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_newslist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='newslist_title'])[5]</td>
+	<td>Testing adding news</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='newslist_link'])[5]</td>
+	<td>http://www.siste.no/</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='newslist_query'])[5]</td>
+	<td>source:14</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@name='newslist_rows'])[5]</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=save_btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://kua.startsiden.no/nettguide/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Nyheter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='main_content_middle']/div[@class='section-wrapper-mobile section-wrapper-news-list'][last()]/h2/a</td>
+	<td>Testing adding news</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='main_content_middle']/div[@class='section-wrapper-mobile section-wrapper-news-list']/ul/li[10]</td>
+	<td>Check the lase news </td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://kua-batmin.startsiden.no/config</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cat_id_137</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=save_btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#cat_id_137 &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>999</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='newslist_config']/div[@class='accordion-group']/div[@class='accordion-heading']/button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>999</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
