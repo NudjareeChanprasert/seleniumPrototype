@@ -54,23 +54,23 @@ a {
 </tr>
 <tr>
 <td>totalTime:</td>
-<td>51</td>
+<td>129</td>
 </tr>
 <tr>
 <td>numTestTotal:</td>
-<td>14</td>
+<td>3</td>
 </tr>
 <tr>
 <td>numTestPasses:</td>
-<td>10</td>
+<td>2</td>
 </tr>
 <tr>
 <td>numTestFailures:</td>
-<td>4</td>
+<td>1</td>
 </tr>
 <tr>
 <td>numCommandPasses:</td>
-<td>69</td>
+<td>18</td>
 </tr>
 <tr>
 <td>numCommandFailures:</td>
@@ -78,7 +78,7 @@ a {
 </tr>
 <tr>
 <td>numCommandErrors:</td>
-<td>4</td>
+<td>1</td>
 </tr>
 <tr>
 <td>Selenium Version:</td>
@@ -89,919 +89,149 @@ a {
 <td>.0</td>
 </tr>
 <tr>
-<td>
-<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
-<tr class="title    status_failed"><td><b>Test Suite</b></td></tr>
-<tr class="  status_passed"><td><a href="#testresult0">nuggAd</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult1">adaScript</a></td></tr>
-<tr class="  status_failed"><td><a href="#testresult2">nettguide</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult3">globalM_oneline</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult4">Global_footer</a></td></tr>
-<tr class="  status_failed"><td><a href="#testresult5">tegneserier</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult6">globalM_2lines</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult7">Global_footer</a></td></tr>
-<tr class="  status_failed"><td><a href="#testresult8">mat_og_drikke</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult9">globalM_2lines</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult10">Global_footer</a></td></tr>
-<tr class="  status_failed"><td><a href="#testresult11">nyheter</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult12">globalM_2lines</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult13">Global_footer</a></td></tr>
-</tbody></table>
-
-
-</td>
+<td><TABLE class=selenium id=suiteTable cellSpacing=1 cellPadding=1 border=1>
+<TBODY>
+<TR class="title status_failed">
+<TD><B>Test Suite</B></TD></TR>
+<TR class="  status_failed">
+<TD><A href="#testresult0">nettguide</A></TD></TR>
+<TR class="  status_passed">
+<TD><A href="#testresult1">globalM_oneline</A></TD></TR>
+<TR class="  status_passed">
+<TD><A href="#testresult2">Global_footer</A></TD></TR></TBODY></TABLE></td>
 <td>&nbsp;</td>
 </tr>
 </table><table><tr>
-<td><a name="testresult0">nuggAd.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">nuggAd</td></tr>
-</thead><tbody>
-<!--Test nugg ad-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertHtmlSource</td>
-	<td>regex:var nuggrid=encodeURIComponent(top.location.href) || 0;</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>open</td>
-	<td>nettguide/it_og_mobil/dataspill/nettspill/</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertHtmlSource</td>
-	<td>regex:var nuggrid=encodeURIComponent(top.location.href) || 0;</td>
-	<td></td>
-</tr>
-</tbody></table>
-
-
-</div></td>
+<td><a name="testresult0">nettguide.htm</a><br/><DIV>
+<TABLE cellSpacing=1 cellPadding=1 border=1>
+<THEAD></THEAD>
+<TBODY><!--Nettguide-->
+<TR class="title   status_failed" style="CURSOR: pointer">
+<TD>open</TD>
+<TD>/nettguide</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_done" style="CURSOR: pointer">
+<TD>setTimeout</TD>
+<TD></TD>
+<TD originalHTML="3000">3000</TD></TR>
+<TR class="  status_done" style="CURSOR: pointer">
+<TD>waitForTitle</TD>
+<TD>Nettguide - Startsiden.no</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//body[@id='category_598833']//div[@id='atoz_wrapper']//h2</TD>
+<TD originalHTML="A - ≈ Nettguiden Temaer">A - ≈ Nettguiden Temaer</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='atoz_search_box']</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//ul[@class='atoz-col']</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_failed" style="CURSOR: pointer">
+<TD>captureEntirePageScreenshot</TD>
+<TD>C:\Users\IEUser\Desktop\seleniumPrototype\capture\Nettguide.jpg</TD>
+<TD originalHTML>captureEntirePageScreenshot&nbsp;is&nbsp;only&nbsp;implemented&nbsp;for&nbsp;Firefox&nbsp;("firefox"&nbsp;or&nbsp;"chrome",&nbsp;NOT&nbsp;"firefoxproxy")&nbsp;and&nbsp;IE&nbsp;non-HTA&nbsp;("iexploreproxy",&nbsp;NOT&nbsp;"iexplore"&nbsp;or&nbsp;"iehta").&nbsp;The&nbsp;current&nbsp;browser&nbsp;isn't&nbsp;one&nbsp;of&nbsp;them!</TD></TR></TBODY></TABLE></DIV></td>
 <td>&nbsp;</td>
 </tr><tr>
-<td><a name="testresult1">adaScript.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">adaScript</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>open</td>
-	<td>/reise</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>setTimeout</td>
-	<td></td>
-	<td>30000</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertHtmlSource</td>
-	<td>regex:&lt;!-- cXense script begin --&gt; &lt;div id="cX-root" style="display:none"&gt;&lt;/div&gt;&nbsp;&nbsp;&lt;script type="text/javascript"&gt;&nbsp;&nbsp;&nbsp;&nbsp;var cX = cX || {}; cX.callQueue = cX.callQueue || [];&nbsp;&nbsp;&nbsp;&nbsp;cX.callQueue.push(['setAccountId', '9222252570837342891']);&nbsp;&nbsp;&nbsp;&nbsp;cX.callQueue.push(['setSiteId', '9222254676827840886']);&nbsp;&nbsp;&nbsp;&nbsp;cX.callQueue.push(['sendPageViewEvent']);&nbsp;&nbsp;&lt;/script&gt;&nbsp;&nbsp;&lt;!-- cXense script end --&gt;</td>
-	<td></td>
-</tr>
-</tbody></table>
-
-
-</div></td>
+<td><a name="testresult1">globalM_oneline.htm</a><br/><DIV>
+<TABLE cellSpacing=1 cellPadding=1 border=1>
+<THEAD>
+<TR class="title status_passed">
+<TD colSpan=3>globalM_oneline</TD></TR></THEAD>
+<TBODY><!--Global Menu-->
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/h1/a</TD>
+<TD originalHTML="Nettguide - Startsiden.no">Nettguide - Startsiden.no</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[1]</TD>
+<TD originalHTML="S¯k">S¯k</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[2]</TD>
+<TD originalHTML="Motor">Motor</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[3]</TD>
+<TD originalHTML="Reise">Reise</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[4]</TD>
+<TD originalHTML="Mat">Mat</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[5]</TD>
+<TD originalHTML="Fotball">Fotball</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[6]</TD>
+<TD originalHTML="ÿkonomi">ÿkonomi</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[7]</TD>
+<TD originalHTML="Video">Video</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[8]</TD>
+<TD originalHTML="A - ≈">A - ≈</TD></TR></TBODY></TABLE></DIV></td>
 <td>&nbsp;</td>
 </tr><tr>
-<td><a name="testresult2">nettguide.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-</thead><tbody>
-<!--Nettguide-->
-<tr class="title   status_failed" style="cursor: pointer; ">
-	<td>open</td>
-	<td>/nettguide</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>setTimeout</td>
-	<td></td>
-	<td>3000</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>waitForTitle</td>
-	<td>Nettguide - Startsiden.no</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//body[@id='category_598833']//div[@id='atoz_wrapper']//h2</td>
-	<td>A - Å Nettguiden Temaer</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='atoz_search_box']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//ul[@class='atoz-col']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_failed">
-	<td>captureEntirePageScreenshot</td>
-	<td>/Users/jew/Desktop/seleniumPrototype/capture/Nettguide.jpg</td>
-	<td>captureEntirePageScreenshot&nbsp;is&nbsp;only&nbsp;implemented&nbsp;for&nbsp;Firefox&nbsp;("firefox"&nbsp;or&nbsp;"chrome",&nbsp;NOT&nbsp;"firefoxproxy")&nbsp;and&nbsp;IE&nbsp;non-HTA&nbsp;("iexploreproxy",&nbsp;NOT&nbsp;"iexplore"&nbsp;or&nbsp;"iehta").&nbsp;The&nbsp;current&nbsp;browser&nbsp;isn't&nbsp;one&nbsp;of&nbsp;them!</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult3">globalM_oneline.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">globalM_oneline</td></tr>
-</thead><tbody>
-<!--Global Menu-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/h1/a</td>
-	<td>Nettguide - Startsiden.no</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[1]</td>
-	<td>Søk</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[2]</td>
-	<td>Motor</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[3]</td>
-	<td>Reise</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[4]</td>
-	<td>Mat</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[5]</td>
-	<td>Fotball</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[6]</td>
-	<td>Økonomi</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[7]</td>
-	<td>Video</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation collapsed']/ul/li[8]</td>
-	<td>A - Å</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult4">Global_footer.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">Global_footer</td></tr>
-</thead><tbody>
-<!--Check Footer-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id = 'global_footer']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td>ABC Startsiden</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[1]</td>
-	<td>Annonseweb</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[2]</td>
-	<td>Gi oss tilbakemelding</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[4]</td>
-	<td>Startsiden blogg</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult5">tegneserier.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_failed"><td rowspan="1" colspan="3">tegneserier_pa_nett</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>open</td>
-	<td>/underholdning/tegneserier/</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>setTimeout</td>
-	<td></td>
-	<td>3000</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_failed">
-	<td>captureEntirePageScreenshot</td>
-	<td>/Users/jew/Desktop/seleniumPrototype/capture/Tegneserier.jpg</td>
-	<td>captureEntirePageScreenshot&nbsp;is&nbsp;only&nbsp;implemented&nbsp;for&nbsp;Firefox&nbsp;("firefox"&nbsp;or&nbsp;"chrome",&nbsp;NOT&nbsp;"firefoxproxy")&nbsp;and&nbsp;IE&nbsp;non-HTA&nbsp;("iexploreproxy",&nbsp;NOT&nbsp;"iexplore"&nbsp;or&nbsp;"iehta").&nbsp;The&nbsp;current&nbsp;browser&nbsp;isn't&nbsp;one&nbsp;of&nbsp;them!</td>
-</tr>
-<!--Check ads-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>id=top_ads</td>
-	<td>0</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='all_wrapper']/div[2]/div</td>
-	<td>outer right ads</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='wrapper']/div[4]/div</td>
-	<td>check bottom ads</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>id=ads_wallpaper_ad</td>
-	<td>check wallpaper ads for this category </td>
-</tr>
-<!--Check three columns -->
-<tr style="cursor: pointer; " class="">
-	<td>verifyXpathCount</td>
-	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol</td>
-	<td>3</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row1']</td>
-	<td>check fot the first column</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row2']</td>
-	<td>check fot the&nbsp;&nbsp;second column</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']//div[@class='panel-inner']/ol[@class='three_column three_column_row3']</td>
-	<td>check fot the third column</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult6">globalM_2lines.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">globalM_2lines</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/h1/a</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[1]</td>
-	<td>Søk</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[2]</td>
-	<td>Motor</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[3]</td>
-	<td>Reise</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[4]</td>
-	<td>Mat</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[5]</td>
-	<td>Fotball</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[6]</td>
-	<td>Økonomi</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[7]</td>
-	<td>Video</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[8]</td>
-	<td>A - Å</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@id='local_navigation']/h2[@id='cat_logo']/a</td>
-	<td></td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult7">Global_footer.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">Global_footer</td></tr>
-</thead><tbody>
-<!--Check Footer-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id = 'global_footer']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td>ABC Startsiden</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[1]</td>
-	<td>Annonseweb</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[2]</td>
-	<td>Gi oss tilbakemelding</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[4]</td>
-	<td>Startsiden blogg</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult8">mat_og_drikke.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_failed"><td rowspan="1" colspan="3">pilot</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>open</td>
-	<td>/mat_og_drikke</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_failed">
-	<td>captureEntirePageScreenshot</td>
-	<td>/Users/jew/Desktop/seleniumPrototype/capture/Mat.jpg</td>
-	<td>captureEntirePageScreenshot&nbsp;is&nbsp;only&nbsp;implemented&nbsp;for&nbsp;Firefox&nbsp;("firefox"&nbsp;or&nbsp;"chrome",&nbsp;NOT&nbsp;"firefoxproxy")&nbsp;and&nbsp;IE&nbsp;non-HTA&nbsp;("iexploreproxy",&nbsp;NOT&nbsp;"iexplore"&nbsp;or&nbsp;"iehta").&nbsp;The&nbsp;current&nbsp;browser&nbsp;isn't&nbsp;one&nbsp;of&nbsp;them!</td>
-</tr>
-<!--Check Blog section-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_blog']</td>
-	<td>Check blog section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//a[@id='toggle_bar_blog']</td>
-	<td>Check toggle bar for blog section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>css=span.collapsed</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_blog']/span</td>
-	<td></td>
-</tr>
-<!--Check Links section-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_links']</td>
-	<td>Check links section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//a[@id='toggle_bar_links']</td>
-	<td>Check toggle bar for blog link</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_links']/span</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_links']/span</td>
-	<td></td>
-</tr>
-<!--Check Video section-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_hvordan']</td>
-	<td>Check video section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//a[@id='toggle_bar_hvordan']</td>
-	<td>Check toggle bar for vdo section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_hvordan']/span</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_hvordan']/span</td>
-	<td></td>
-</tr>
-<!--Check NEWS section-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_news']</td>
-	<td>Check News section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//a[@id='toggle_bar_news']</td>
-	<td>Check toggle bar for news section</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>css=#toggle_bar_news&gt; span.collapsed</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>click</td>
-	<td>//a[@id='toggle_bar_blog']/span</td>
-	<td></td>
-</tr>
-<!--Check TV-Guide-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_tvguide']</td>
-	<td>Check Tv-Guide</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_tvguide']/div[@id='tvguide']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='main_content_middle']/div[@id='section_wrapper_social']</td>
-	<td>Check social section( FB comment )</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@class='google_ads bottom']</td>
-	<td>Check Google ads at the bottom</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='category_description']</td>
-	<td>Check category description</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']</td>
-	<td>Check Global menu</td>
-</tr>
-<!--Test Search in Mat og Drikke-->
-<tr style="cursor: pointer; " class="">
-	<td>store</td>
-	<td>fisk</td>
-	<td>searchWord</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>type</td>
-	<td>//input[@id='non_instant_search']</td>
-	<td>${searchWord}</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>clickAndWait</td>
-	<td>css=button.button.button-submit</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertHtmlSource</td>
-	<td>regex:${searchWord}</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>verifyElementPresent</td>
-	<td>//div[@id='main_content_right']/div[@id='section_wrapper_hvordan']</td>
-	<td>Videos show on the right after searching # no_mech</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>verifyElementPresent</td>
-	<td>//div[@id='main_content_left']/div[@class='google_ads top']</td>
-	<td>Check top ads # no_mech</td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>verifyElementPresent</td>
-	<td>//div[@id='main_content_left']/div[@class='google_ads bottom']</td>
-	<td>Check bottom ads # no_mech</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult9">globalM_2lines.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">globalM_2lines</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/h1/a</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[1]</td>
-	<td>Søk</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[2]</td>
-	<td>Motor</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[3]</td>
-	<td>Reise</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[4]</td>
-	<td>Mat</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[5]</td>
-	<td>Fotball</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[6]</td>
-	<td>Økonomi</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[7]</td>
-	<td>Video</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[8]</td>
-	<td>A - Å</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@id='local_navigation']/h2[@id='cat_logo']/a</td>
-	<td></td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult10">Global_footer.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">Global_footer</td></tr>
-</thead><tbody>
-<!--Check Footer-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id = 'global_footer']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td>ABC Startsiden</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[1]</td>
-	<td>Annonseweb</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[2]</td>
-	<td>Gi oss tilbakemelding</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[4]</td>
-	<td>Startsiden blogg</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult11">nyheter.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_failed"><td rowspan="1" colspan="3">nyheter</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>open</td>
-	<td>/nyheter/</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_done">
-	<td>setTimeout</td>
-	<td></td>
-	<td>3000</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_failed">
-	<td>captureEntirePageScreenshot</td>
-	<td>/Users/jew/Desktop/seleniumPrototype/capture/Nyheter.jpg</td>
-	<td>captureEntirePageScreenshot&nbsp;is&nbsp;only&nbsp;implemented&nbsp;for&nbsp;Firefox&nbsp;("firefox"&nbsp;or&nbsp;"chrome",&nbsp;NOT&nbsp;"firefoxproxy")&nbsp;and&nbsp;IE&nbsp;non-HTA&nbsp;("iexploreproxy",&nbsp;NOT&nbsp;"iexplore"&nbsp;or&nbsp;"iehta").&nbsp;The&nbsp;current&nbsp;browser&nbsp;isn't&nbsp;one&nbsp;of&nbsp;them!</td>
-</tr>
-<!--Check Ads-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>id=top_ads</td>
-	<td></td>
-</tr>
-<!--Check main content-->
-<tr style="cursor: pointer; " class="">
-	<td>assertElementPresent</td>
-	<td>//input[@id='non_instant_search']</td>
-	<td>Search box is here </td>
-</tr>
-<tr style="cursor: pointer; " class="">
-	<td>assertXpathCount</td>
-	<td>//div[@id='main_content_middle']/div[@class='section-wrapper-mobile section-wrapper-news-list']</td>
-	<td>10</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult12">globalM_2lines.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">globalM_2lines</td></tr>
-</thead><tbody>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/h1/a</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[1]</td>
-	<td>Søk</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[2]</td>
-	<td>Motor</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[3]</td>
-	<td>Reise</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[4]</td>
-	<td>Mat</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[5]</td>
-	<td>Fotball</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[6]</td>
-	<td>Økonomi</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[7]</td>
-	<td>Video</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_menu']/div[@class='global-navigation']/ul/li[8]</td>
-	<td>A - Å</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_menu']/div[@id='local_navigation']/h2[@id='cat_logo']/a</td>
-	<td></td>
-</tr>
-</tbody></table>
-
-
-</div></td>
-<td>&nbsp;</td>
-</tr><tr>
-<td><a name="testresult13">Global_footer.htm</a><br/><div>
-<table cellpadding="1" cellspacing="1" border="1">
-<thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">Global_footer</td></tr>
-</thead><tbody>
-<!--Check Footer-->
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id = 'global_footer']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertElementPresent</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td></td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</td>
-	<td>ABC Startsiden</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[1]</td>
-	<td>Annonseweb</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[2]</td>
-	<td>Gi oss tilbakemelding</td>
-</tr>
-<tr style="cursor: pointer; " class="  status_passed">
-	<td>assertText</td>
-	<td>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[4]</td>
-	<td>Startsiden blogg</td>
-</tr>
-</tbody></table>
-
-
-</div></td>
+<td><a name="testresult2">Global_footer.htm</a><br/><DIV>
+<TABLE cellSpacing=1 cellPadding=1 border=1>
+<THEAD>
+<TR class="title status_passed">
+<TD colSpan=3>Global_footer</TD></TR></THEAD>
+<TBODY><!--Check Footer-->
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id = 'global_footer']</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertElementPresent</TD>
+<TD>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</TD>
+<TD originalHTML></TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_footer']/a[@class='global-footer-logo global-footer-element']</TD>
+<TD originalHTML="ABC Startsiden">ABC Startsiden</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[1]</TD>
+<TD originalHTML="Annonseweb">Annonseweb</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[2]</TD>
+<TD originalHTML="Gi oss tilbakemelding">Gi oss tilbakemelding</TD></TR>
+<TR class="  status_passed" style="CURSOR: pointer">
+<TD>assertText</TD>
+<TD>//div[@id='global_footer']/div[@class='global-footer-meta-menus global-footer-element']/div[@class='meta-menu first']/ul[@class='meta-menu-list']/li[4]</TD>
+<TD originalHTML="Startsiden blogg">Startsiden blogg</TD></TR></TBODY></TABLE></DIV></td>
 <td>&nbsp;</td>
 </tr></table><pre>
-info: Starting test /selenium-server/tests/nuggAd.htm
-info: Executing: |assertHtmlSource | regex:var nuggrid=encodeURIComponent(top.location.href) || 0; |  |
-info: Executing: |open | nettguide/it_og_mobil/dataspill/nettspill/ |  |
-info: Executing: |assertHtmlSource | regex:var nuggrid=encodeURIComponent(top.location.href) || 0; |  |
-info: Starting test /selenium-server/tests/adaScript.htm
-info: Executing: |open | /reise |  |
-info: Executing: |setTimeout |  | 30000 |
-info: Executing: |assertHtmlSource | regex:&lt;!-- cXense script begin --&gt; &lt;div id=&quot;cX-root&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;  &lt;script type=&quot;text/javascript&quot;&gt;    var cX = cX || {}; cX.callQueue = cX.callQueue || [];    cX.callQueue.push([&apos;setAccountId&apos;, &apos;9222252570837342891&apos;]);    cX.callQueue.push([&apos;setSiteId&apos;, &apos;9222254676827840886&apos;]);    cX.callQueue.push([&apos;sendPageViewEvent&apos;]);  &lt;/script&gt;  &lt;!-- cXense script end --&gt; |  |
 info: Starting test /selenium-server/tests/nettguide.htm
 info: Executing: |open | /nettguide |  |
 info: Executing: |setTimeout |  | 3000 |
 info: Executing: |waitForTitle | Nettguide - Startsiden.no |  |
-info: Executing: |assertText | //body[@id=&apos;category_598833&apos;]//div[@id=&apos;atoz_wrapper&apos;]//h2 | A - Å Nettguiden Temaer |
+info: Executing: |assertText | //body[@id=&apos;category_598833&apos;]//div[@id=&apos;atoz_wrapper&apos;]//h2 | A - ≈ Nettguiden Temaer |
 info: Executing: |assertElementPresent | //div[@id=&apos;atoz_search_box&apos;] |  |
 info: Executing: |assertElementPresent | //ul[@class=&apos;atoz-col&apos;] |  |
-info: Executing: |captureEntirePageScreenshot | /Users/jew/Desktop/seleniumPrototype/capture/Nettguide.jpg |  |
+info: Executing: |captureEntirePageScreenshot | C:\Users\IEUser\Desktop\seleniumPrototype\capture\Nettguide.jpg |  |
 error: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
 warn: currentTest.recordFailure: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
 info: Starting test /selenium-server/tests/globalM_oneline.htm
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/h1/a | Nettguide - Startsiden.no |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[1] | Søk |
+info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[1] | S¯k |
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[2] | Motor |
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[3] | Reise |
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[4] | Mat |
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[5] | Fotball |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[6] | Økonomi |
+info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[6] | ÿkonomi |
 info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[7] | Video |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[8] | A - Å |
-info: Starting test /selenium-server/tests/Global_footer.htm
-info: Executing: |assertElementPresent | //div[@id = &apos;global_footer&apos;] |  |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] |  |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] | ABC Startsiden |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[1] | Annonseweb |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[2] | Gi oss tilbakemelding |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[4] | Startsiden blogg |
-info: Starting test /selenium-server/tests/tegneserier.htm
-info: Executing: |open | /underholdning/tegneserier/ |  |
-info: Executing: |setTimeout |  | 3000 |
-info: Executing: |captureEntirePageScreenshot | /Users/jew/Desktop/seleniumPrototype/capture/Tegneserier.jpg |  |
-error: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-warn: currentTest.recordFailure: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-info: Starting test /selenium-server/tests/globalM_2lines.htm
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/h1/a |  |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[1] | Søk |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[2] | Motor |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[3] | Reise |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[4] | Mat |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[5] | Fotball |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[6] | Økonomi |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[7] | Video |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[8] | A - Å |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@id=&apos;local_navigation&apos;]/h2[@id=&apos;cat_logo&apos;]/a |  |
-info: Starting test /selenium-server/tests/Global_footer.htm
-info: Executing: |assertElementPresent | //div[@id = &apos;global_footer&apos;] |  |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] |  |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] | ABC Startsiden |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[1] | Annonseweb |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[2] | Gi oss tilbakemelding |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[4] | Startsiden blogg |
-info: Starting test /selenium-server/tests/mat_og_drikke.htm
-info: Executing: |open | /mat_og_drikke |  |
-info: Executing: |captureEntirePageScreenshot | /Users/jew/Desktop/seleniumPrototype/capture/Mat.jpg |  |
-error: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-warn: currentTest.recordFailure: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-info: Starting test /selenium-server/tests/globalM_2lines.htm
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/h1/a |  |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[1] | Søk |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[2] | Motor |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[3] | Reise |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[4] | Mat |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[5] | Fotball |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[6] | Økonomi |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[7] | Video |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[8] | A - Å |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@id=&apos;local_navigation&apos;]/h2[@id=&apos;cat_logo&apos;]/a |  |
-info: Starting test /selenium-server/tests/Global_footer.htm
-info: Executing: |assertElementPresent | //div[@id = &apos;global_footer&apos;] |  |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] |  |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] | ABC Startsiden |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[1] | Annonseweb |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[2] | Gi oss tilbakemelding |
-info: Executing: |assertText | //div[@id=&apos;global_footer&apos;]/div[@class=&apos;global-footer-meta-menus global-footer-element&apos;]/div[@class=&apos;meta-menu first&apos;]/ul[@class=&apos;meta-menu-list&apos;]/li[4] | Startsiden blogg |
-info: Starting test /selenium-server/tests/nyheter.htm
-info: Executing: |open | /nyheter/ |  |
-info: Executing: |setTimeout |  | 3000 |
-info: Executing: |captureEntirePageScreenshot | /Users/jew/Desktop/seleniumPrototype/capture/Nyheter.jpg |  |
-error: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-warn: currentTest.recordFailure: captureEntirePageScreenshot is only implemented for Firefox (&quot;firefox&quot; or &quot;chrome&quot;, NOT &quot;firefoxproxy&quot;) and IE non-HTA (&quot;iexploreproxy&quot;, NOT &quot;iexplore&quot; or &quot;iehta&quot;). The current browser isn&apos;t one of them!
-info: Starting test /selenium-server/tests/globalM_2lines.htm
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/h1/a |  |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[1] | Søk |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[2] | Motor |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[3] | Reise |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[4] | Mat |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[5] | Fotball |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[6] | Økonomi |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[7] | Video |
-info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation&apos;]/ul/li[8] | A - Å |
-info: Executing: |assertElementPresent | //div[@id=&apos;global_menu&apos;]/div[@id=&apos;local_navigation&apos;]/h2[@id=&apos;cat_logo&apos;]/a |  |
+info: Executing: |assertText | //div[@id=&apos;global_menu&apos;]/div[@class=&apos;global-navigation collapsed&apos;]/ul/li[8] | A - ≈ |
 info: Starting test /selenium-server/tests/Global_footer.htm
 info: Executing: |assertElementPresent | //div[@id = &apos;global_footer&apos;] |  |
 info: Executing: |assertElementPresent | //div[@id=&apos;global_footer&apos;]/a[@class=&apos;global-footer-logo global-footer-element&apos;] |  |
